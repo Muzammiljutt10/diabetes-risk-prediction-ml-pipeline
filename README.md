@@ -17,7 +17,7 @@ It addresses **class imbalance** and improves model performance using **threshol
 
 ---
 
-## 📊 Dataset Features
+## Dataset Features
 
 The model is trained on the following features:
 
@@ -32,7 +32,7 @@ The model is trained on the following features:
 
 ---
 
-## ⚙️ Data Preprocessing
+## Data Preprocessing
 
 - Categorical encoding:
   - `gender`, `smoking_history`
@@ -44,7 +44,7 @@ The model is trained on the following features:
 
 ---
 
-## 🤖 Model Used
+## Model Used
 
 - **XGBoost Classifier**
 

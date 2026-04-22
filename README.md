@@ -1,60 +1,20 @@
-# Diabetes Risk Prediction using XGBoost
+Diabetes Risk Prediction using Machine Learning
 
+This project focuses on predicting the likelihood of diabetes using machine learning techniques on a large-scale dataset (100,000 records). The model leverages health-related features to classify individuals as diabetic or non-diabetic. The objective is to build a reliable prediction system that can assist in early detection and healthcare decision-making.
 
-##  Overview
+Dataset
+The dataset contains ~100,000 samples, making it suitable for training robust machine learning models.
+Features include:
+-Age
+-Gender
+-BMI (Body Mass Index)
+-Hypertension
+-Heart Disease
+-Smoking History
+-HbA1c Level
+-Blood Glucose Level
+-Target Variable:
+- 0 → Non-diabetic
+- 1 → Diabetic
 
-This project focuses on predicting diabetes risk using a machine learning classification model built with **XGBoost**.  
-It addresses **class imbalance** and improves model performance using **threshold tuning** to achieve a better balance between precision and recall.
-
----
-
-##  Objectives
-
-- Predict whether a patient is diabetic or non-diabetic
-- Handle **imbalanced dataset** effectively
-- Optimize model performance beyond accuracy
-- Improve **precision-recall trade-off** using threshold tuning
-
----
-
-## Dataset Features
-
-The model is trained on the following features:
-
-- `gender`
-- `age`
-- `hypertension`
-- `heart_disease`
-- `smoking_history`
-- `bmi`
-- `HbA1c_level`
-- `blood_glucose_level`
-
----
-
-## Data Preprocessing
-
-- Categorical encoding:
-  - `gender`, `smoking_history`
-- Feature scaling:
-  - `age`, `bmi`, `HbA1c_level`, `blood_glucose_level`
-- Train-test split applied
-- Class imbalance handled using:
-  - `scale_pos_weight` in XGBoost
-
----
-
-## Model Used
-
-- **XGBoost Classifier**
-
-### Key Parameters:
-```python
-max_depth=4
-n_estimators=300
-learning_rate=0.08
-subsample=0.8
-colsample_bytree=0.8
-scale_pos_weight=imbalanced_ratio
-reg_alpha=0.5
-reg_lambda=1
+- 

@@ -25,7 +25,7 @@ The objective is to build a reliable prediction system that can assist in early 
 
 ---
 
-## ⚙️ Project Workflow
+## Project Workflow
 
 ###  Importing Libraries
 Core libraries used:
@@ -75,7 +75,7 @@ Core libraries used:
 
 ---
 
-### 8️⃣ Model Evaluation
+### Model Evaluation
 - Training Accuracy: ~82.8%  
 - Testing Accuracy: ~80.5%  
 - Cross-validation score: ~77.3%    
